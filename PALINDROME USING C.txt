@@ -1,0 +1,18 @@
+//1.PROGRAM TO CHECK WHETHER A NUMBER IS A PALINDDROME OR NOT:-
+#include <stdio.h>
+int main()
+{
+    int r,sum = 0,c,s1,s2;
+    scanf("%d",&c);
+    int k = c;
+    while(c!=0)
+    {
+        r = c%10;
+        sum = sum*10+r;
+        c = c/10;
+    }
+    if(k == sum)
+    {
+        printf("palindrome.");
+    }
+}
