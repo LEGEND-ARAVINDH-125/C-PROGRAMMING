@@ -1,0 +1,89 @@
+//pattern a
+#include <stdio.h>
+int main()
+{
+    int n,s;
+    scanf("%d %d",&n,&s);
+    int i,j;
+    for(i=1;i<=n;i++)
+    {   
+        printf("\n");
+        for(j=1;j<=s;j++)
+        {
+            if(i==1 || i==n || j==1 || j==s)
+            {
+                    if(i==j)
+                       printf("$");
+                
+                    
+                    else
+                       printf("*");
+            }
+            else if(i==j)
+                          printf("$");
+            else if((i==2*j))
+                          printf("$");
+            else if((j==2*i))
+                          printf("$");
+            else
+                   printf(" ");
+            
+        }
+        
+    }
+}
+
+o/p
+5 5
+
+$ * * * *
+* $   $ *
+*   $   *
+* $   $ *
+* * * * $
+
+//pattern b
+#include <stdio.h>
+int main()
+{
+    int n,s;
+    scanf("%d %d",&n,&s);
+    int i,j;
+    for(i=1;i<=n;i++)
+    {   
+        printf("\n");
+        for(j=1;j<=s;j++)
+        {
+            if(i==1 || i==n || j==1 || j==s)
+            {
+                    if(i==j)
+                       printf("$");
+                
+                    
+                    else
+                       printf("*");
+            }
+            else if(i==j)
+                          printf("$");
+            else
+                   printf(" ");
+            
+        }
+        
+    }
+}
+
+o/p
+5 5
+
+
+$ * * * *
+* $     *
+*   $   *
+*     $ *
+* * * * $
+
+
+
+
+
